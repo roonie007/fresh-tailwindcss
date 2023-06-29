@@ -36,6 +36,18 @@ await start(manifest, {
 });
 ```
 
+Your `tailwind.config.ts` file should export a valid TailwindCSS configuration object. For more information, see the [TailwindCSS documentation](https://tailwindcss.com/docs/configuration).
+
+```ts
+export default {
+  content: [
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./islands/**/*.{js,ts,jsx,tsx,mdx}",
+    "./routes/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+};
+```
+
 ## License
 
 [MIT](./LICENSE)
