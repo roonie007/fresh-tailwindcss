@@ -21,7 +21,7 @@ Meanwhile, in a **development** mode, the plugin rebuilds your CSS during every 
 In your `main.ts` file, import the plugin and add it to the `plugins` array.
 
 ```ts
-import tailwindPlugin from "https://deno.land/x/fresh-tailwindcss/mod.ts";
+import tailwindPlugin from "https://deno.land/x/fresh_tailwindcss/mod.ts";
 import tailwindConfig from "./tailwind.config.ts"; // Your tailwind config
 
 await start(manifest, {
