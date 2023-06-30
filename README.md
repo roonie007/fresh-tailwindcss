@@ -28,7 +28,7 @@ await start(manifest, {
   plugins: [
     tailwindPlugin({
       mode: "development", // or 'production'
-      input: "./platform/style.css", // Relative path to the running script
+      input: "./style.css", // Relative path to the running script
       verbose: false,
       tailwindConfig,
     }),
@@ -36,7 +36,7 @@ await start(manifest, {
 });
 ```
 
-Your `tailwind.config.ts` file should export a valid TailwindCSS configuration object. For more information, see the [TailwindCSS documentation](https://tailwindcss.com/docs/configuration).
+Your `tailwind.config.js` file should export a valid TailwindCSS configuration object. For more information, see the [TailwindCSS documentation](https://tailwindcss.com/docs/configuration).
 
 ```ts
 export default {
@@ -46,6 +46,14 @@ export default {
     "./routes/**/*.{js,ts,jsx,tsx,mdx}",
   ],
 };
+```
+
+Your `style.css` file should import TailwindCSS.
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
 ## License
